@@ -19,6 +19,7 @@
       flex-direction: column;
       @include mediaquery800px {
         flex-direction: row;
+        align-items: center;
       }
 
       .serve-col {
