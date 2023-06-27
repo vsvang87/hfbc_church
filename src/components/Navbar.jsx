@@ -13,6 +13,9 @@ function Navbar() {
           </Link>
           <ul>
             <li>
+              <Link to="/">HOME</Link>
+            </li>
+            <li>
               <Link to="/ministries">MINISTRIES</Link>
             </li>
             <li>

@@ -33,6 +33,7 @@
     }
     p {
       font-size: 1rem;
+      color: $orange;
       @include mediaquery800px {
         font-size: 2.5rem;
       }
