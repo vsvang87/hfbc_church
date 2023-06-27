@@ -3,3 +3,14 @@ $textWhite: #eeeeee;
 $darkGray: #424242;
 $lightGray: #686868;
 $darkRed: rgb(182, 84, 84);
+
+@mixin mediaquery420px {
+  @media (min-width: 420px) {
+    @content;
+  }
+}
+@mixin mediaquery800px {
+  @media (min-width: 800px) {
+    @content;
+  }
+}

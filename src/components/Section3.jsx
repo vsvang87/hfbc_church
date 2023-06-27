@@ -1,9 +1,9 @@
 import React from "react";
 
-function Section3() {
+function Section3({ worship }) {
   return (
     <div>
-      <section className="sect-3">
+      <section className="sect3">
         <div className="center">
           <div className="sect3-container">
             <div className="sect3-content">
@@ -22,7 +22,7 @@ function Section3() {
                 </div>
               </div>
               <div className="serve-img serve-col">
-                <img src="../static/images/scripture.jpg" alt="" />
+                <img src={worship} alt="" />
               </div>
             </div>
           </div>

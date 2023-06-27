@@ -4,6 +4,9 @@ import Service from "./Service";
 import Prayer from "./Prayer";
 import Ministry from "./Ministry";
 import Location from "./Location";
+import men from "../images/men.jpg";
+import women from "../images/women.jpg";
+import youth2 from "../images/youth2.jpg";
 
 function Home() {
   return (
@@ -11,7 +14,7 @@ function Home() {
       <Hero />
       <Service />
       <Prayer />
-      <Ministry />
+      <Ministry men={men} women={women} youth2={youth2} />
       <Location />
     </div>
   );

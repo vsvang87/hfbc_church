@@ -1,0 +1,50 @@
+@use "./helper" as *;
+
+.sect3 {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: $darkRed;
+  padding: 2rem 0;
+  .sect3-container {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sect3-content {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      @include mediaquery800px {
+        flex-direction: row;
+      }
+
+      .serve-col {
+        width: 100%;
+        @include mediaquery800px {
+          width: 50%;
+        }
+        img {
+          width: 100%;
+        }
+        h1 {
+          font-family: sans-serif;
+          padding-bottom: 1rem;
+        }
+        p {
+          padding-bottom: 1rem;
+        }
+      }
+      .serve-info {
+        letter-spacing: 0.05rem;
+        line-height: 1.5rem;
+        color: $textWhite;
+        @include mediaquery800px {
+          padding-right: 5rem;
+        }
+      }
+    }
+  }
+}

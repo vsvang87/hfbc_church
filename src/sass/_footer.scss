@@ -7,8 +7,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-footer .footer-container {
-  text-align: center;
-  color: $textWhite;
+  .footer-container {
+    text-align: center;
+    color: $textWhite;
+    p {
+      font-size: 0.8rem;
+    }
+  }
 }

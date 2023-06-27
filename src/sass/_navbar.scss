@@ -2,20 +2,26 @@
 
 nav {
   background: $darkGray;
-  // position: sticky;
-  // top: 0;
-  // z-index: 1;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   .navbar-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     letter-spacing: 0.07rem;
-
+    @include mediaquery420px {
+      justify-content: space-between;
+    }
     .logo {
+      display: none;
       text-decoration: none;
       color: $textWhite;
       font-size: 1.5rem;
       transition: 0.15s ease-in-out;
+      @include mediaquery420px {
+        display: block;
+      }
       &:hover {
         color: $orange;
       }

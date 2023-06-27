@@ -3,7 +3,7 @@ import React from "react";
 function Section1() {
   return (
     <div>
-      <section className="sect-1">
+      <section className="sect1">
         <div className="center">
           <div className="sect-1-container">
             <div className="sect1-content">

@@ -1,9 +1,9 @@
 import React from "react";
 
-function Section2({ children1, youth1 }) {
+function Section2({ children1, youth1, churchcamp, women2, song, outreach }) {
   return (
     <div>
-      <section sect-2>
+      <section className="sect2">
         <div className="center">
           <h1>OUR MINISTRIES</h1>
           <div className="sect2-container">
@@ -17,19 +17,19 @@ function Section2({ children1, youth1 }) {
                 <h2>Youth</h2>
               </div>
               <div className="men ministry-col">
-                <img src="../static/images/churchcamp.jpg" alt="" />
+                <img src={churchcamp} alt="" />
                 <h2>Men</h2>
               </div>
               <div className="women ministry-col">
-                <img src="../static/images/women.jpg" alt="" />
+                <img src={women2} alt="" />
                 <h2>Women</h2>
               </div>
               <div className="ministry-col">
-                <img src="../static/images/songbook.jpg" alt="" />
+                <img src={song} alt="" />
                 <h2>Music</h2>
               </div>
               <div className="ministry-col">
-                <img src="../static/images/tee.JPG" alt="" />
+                <img src={outreach} alt="" />
                 <h2>Outreach</h2>
               </div>
             </div>

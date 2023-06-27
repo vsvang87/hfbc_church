@@ -6,19 +6,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   .sect2-container {
     width: 100%;
 
     .three-columns-content {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+
+      @include mediaquery800px {
+        flex-direction: row;
+        align-items: flex-start;
+      }
       .content1 {
-        border-right: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+        @include mediaquery800px {
+          border-bottom: none;
+          border-right: 1px solid lightgray;
+        }
       }
       .g-col {
-        width: 50%;
-        height: 300px;
+        width: 100%;
         text-align: center;
         font-weight: bold;
         h2 {
