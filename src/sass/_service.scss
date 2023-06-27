@@ -1,0 +1,47 @@
+@use "./helper" as *;
+
+.sect-2 {
+  min-height: 50vh;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .sect2-container {
+    width: 100%;
+
+    .three-columns-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .content1 {
+        border-right: 1px solid lightgray;
+      }
+      .g-col {
+        width: 50%;
+        height: 300px;
+        text-align: center;
+        font-weight: bold;
+        h2 {
+          padding-bottom: 1rem;
+          font-family: sans-serif;
+        }
+        p {
+          padding-bottom: 1rem;
+        }
+        .zoom {
+          font-size: 5rem;
+          padding-bottom: 1rem;
+          color: $darkRed;
+          padding: 0 1rem;
+          box-shadow: 5px 5px 10px 5px rgba($color: #000000, $alpha: 0.1);
+          border-radius: 10px;
+          margin-bottom: 1rem;
+        }
+        .icon {
+          font-size: 2rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}

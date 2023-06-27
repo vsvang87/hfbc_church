@@ -1,0 +1,32 @@
+@use "./helper" as *;
+
+.sect-4 {
+  min-height: 60vh;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .sect4-container {
+    width: 100%;
+    h1 {
+      font-family: sans-serif;
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+    .sect4-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+
+      .m-col {
+        width: 33%;
+        text-align: center;
+        img {
+          width: 100%;
+          height: 280px;
+        }
+      }
+    }
+  }
+}

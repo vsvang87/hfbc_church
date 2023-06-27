@@ -1,0 +1,53 @@
+@use "./helper" as *;
+
+nav {
+  background: $darkGray;
+  // position: sticky;
+  // top: 0;
+  // z-index: 1;
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 0.07rem;
+
+    .logo {
+      text-decoration: none;
+      color: $textWhite;
+      font-size: 1.5rem;
+      transition: 0.15s ease-in-out;
+      &:hover {
+        color: $orange;
+      }
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      li {
+        list-style-type: none;
+        padding: 2rem 0;
+        padding-left: 2rem;
+        a {
+          text-decoration: none;
+          color: $textWhite;
+          transition: 0.15s ease-in-out;
+          &:hover {
+            color: $orange;
+          }
+        }
+        .give-btn {
+          border: 1px solid $orange;
+          padding: 0.5rem 1rem;
+          border-radius: 50px 50px;
+          background: $orange;
+          transition: 0.15s ease-in-out;
+          &:hover {
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+}

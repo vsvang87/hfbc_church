@@ -1,0 +1,21 @@
+@use "./helper" as *;
+
+.sect-6 {
+  min-height: 25vh;
+  background: $lightGray;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .sect6-container {
+    color: $textWhite;
+    text-align: center;
+    p,
+    h2 {
+      padding-bottom: 0.7rem;
+      .icon {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}

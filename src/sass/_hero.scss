@@ -1,0 +1,34 @@
+@use "./helper" as *;
+
+.sect-1 {
+  min-height: 80vh;
+  padding: 1rem 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url(../images/bible1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+  .sect1-content {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $textWhite;
+    h1 {
+      font-size: 4rem;
+      font-family: "Merriweather", serif;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+}

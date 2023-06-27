@@ -1,0 +1,14 @@
+@use "./helper" as *;
+
+footer {
+  min-height: 15vh;
+  background: $darkGray;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-container {
+  text-align: center;
+  color: $textWhite;
+}
