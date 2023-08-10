@@ -1,0 +1,54 @@
+.sect3 {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: rgb(182, 84, 84);
+  padding: 2rem 0;
+}
+.sect3 .sect3-container {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sect3 .sect3-container .sect3-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+@media (min-width: 800px) {
+  .sect3 .sect3-container .sect3-content {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.sect3 .sect3-container .sect3-content .serve-col {
+  width: 100%;
+}
+@media (min-width: 800px) {
+  .sect3 .sect3-container .sect3-content .serve-col {
+    width: 50%;
+  }
+}
+.sect3 .sect3-container .sect3-content .serve-col img {
+  width: 100%;
+}
+.sect3 .sect3-container .sect3-content .serve-col h1 {
+  font-family: sans-serif;
+  padding-bottom: 1rem;
+}
+.sect3 .sect3-container .sect3-content .serve-col p {
+  padding-bottom: 1rem;
+}
+.sect3 .sect3-container .sect3-content .serve-info {
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+  color: #eeeeee;
+}
+@media (min-width: 800px) {
+  .sect3 .sect3-container .sect3-content .serve-info {
+    padding-right: 5rem;
+  }
+}/*# sourceMappingURL=section3.css.map */

@@ -4,8 +4,8 @@ $darkGray: #424242;
 $lightGray: #686868;
 $darkRed: rgb(182, 84, 84);
 
-@mixin mediaquery420px {
-  @media (min-width: 420px) {
+@mixin mediaquery475px {
+  @media (min-width: 475px) {
     @content;
   }
 }
